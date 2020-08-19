@@ -1,14 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 .hello-world-banner {
     height: 300px;
     width: 100%;
-    background-image: /images/background.jpg;
+    background-image: url(images/background.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1em;
 }
 
+.title {
+    background: white;
+}
+
 .hello-world {
     font-size: 40px;
-    color: white;
+    color: gold;
+    font-family: Quicksand;
 }
+
+.title-description {
+    font-size: 20px;
+    color: black;
+    font-family: Quicksand;
+}
+
