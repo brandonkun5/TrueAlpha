@@ -1,5 +1,22 @@
 {
-  "name": "My first remote theme",
-  "about_url": "https://some.url.com",
-  "license_url": "https://github.com/brandonkun5/TrueAlpha/blob/master/LICENSE"
+  "name": "True Alpha",
+  "about_url": "https://github.com/brandonkun5/TrueAlpha/blob/master/README.md",
+  "license_url": "https://github.com/brandonkun5/TrueAlpha/blob/master/LICENSE",
+   "assets": {
+        "asset-variable": "assets/background.svg"
+   },
+   "color_schemes": {
+       "color scheme name": {
+          "primary": "010101",
+          "secondary": "fffffd",
+          "tertiary": "CCAA00",
+          "quaternary": "CCAA00",
+          "header_background": "ffffff",
+          "header_primary": "262322",
+          "highlight": "CCAA00",
+          "danger": "e34f2b",
+          "success": "78be78",
+          "love": "eff516"
+        }
+    }
 }
