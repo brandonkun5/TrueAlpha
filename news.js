@@ -2,7 +2,7 @@ $(document).ready(function(){
   
   const proxyUrl = "https://cors-anywhere.herokuapp.com/"
   const qInTitle = "None";
-  const from = "2020-12-11";
+  const from = "2020-12-14";
   const apiKey = "2c9aadb862ba458a9ffc475420b4bc84";
   const url = `${proxyUrl}https://newsapi.org/v2/everything?qInTitle=${qInTitle}&from=${from}language=en&apiKey=${apiKey}`;
   const request = new Request(url);
@@ -28,24 +28,17 @@ $(document).ready(function(){
 
       for (var i in latestNews){
         output +=`
-        <div class="card" style="width: 18rem;">
-          <img src="${latestNews[i].urlToImage}" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">${latestNews[i].title}</h5>
-                  <p class="card-text">${latestNews[i].description}</p>
-                  <a href="${latestNews[i].url}" class="btn btn-primary">Read the Story</a>
-              </div>
-        </div>
+        <a href="${latestNews[i].url}" class="list-group-item list-group-item-action">${latestNews[i].title}</a>
         `;
       }
 
       if(output !== ""){
-        $('#news').html(output);
+        $("#news").after(output);
       }
     },
 
     error:function(){
-  
+      $("#news").append("Some error occured");
     },
 
   });
