@@ -45,10 +45,10 @@
 
       fastlinkBtn.addEventListener('click', function() {
         window.fastlink.open({
-          fastLinkURL: 'https://fl4.sandbox.yodlee.com/authenticate/restserver/fastlink',
-          accessToken: 'ftjAngWAmYDuvIAI9D5IFSL7407A', /*need to use Postman to get new accessToken */
+          fastLinkURL: 'https://fl4.preprod.yodlee.com/authenticate/USDevexPreProd2-158/fastlink/?channelAppName=usdevexpreprod2',
+          accessToken: 'wCTv5LkUG3H1kjAecyRb6sPfOe82', /*need to use Postman to get new accessToken */
           params: {
-            userExperienceFlow : 'Aggregation'
+            configName : 'Aggregation',
           },
           onSuccess: function (data) {
             console.log(data);
