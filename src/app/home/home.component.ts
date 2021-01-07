@@ -1,14 +1,15 @@
+import { Restaurant } from './../../types/restaurant';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { APIService } from './API.service';
-import { Restaurant } from '../types/restaurant';
+import { APIService } from '../API.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AppComponent implements OnInit {
+export class HomeComponent implements OnInit {
+
   title = 'true-alpha';
   public createForm: FormGroup;
 
@@ -41,6 +42,6 @@ export class AppComponent implements OnInit {
     .catch(e => {
       console.log('error creating restaurant...', e);
     });
+
   }
 }
-

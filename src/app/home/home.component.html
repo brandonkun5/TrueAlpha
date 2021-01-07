@@ -1,0 +1,31 @@
+<div class="container" style="padding-top: 10px;">
+    <div class="row">
+      <div class="col-3">
+            <app-homeprofile></app-homeprofile>
+      </div>
+      <div class="col-6">
+        <app-homeleaderboard></app-homeleaderboard>
+      </div>
+      <div class="col-3">
+        <h1>Feed</h1>
+        <app-feed></app-feed>
+      </div>
+    </div>   
+  
+    <div class="form-body">
+      <form autocomplete="off" [formGroup]="createForm" (ngSubmit)="onCreate(createForm.value)">
+        <div>
+          <label>Subject </label>
+          <input type="text" formControlName="name" autocomplete="off">
+        </div>
+        <div>
+          <label>Description: </label>
+          <input type="text" formControlName="description" autocomplete="off">
+        </div>
+        <div>
+          <label>Media </label>
+          <input type="text" formControlName="city" autocomplete="off">
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
