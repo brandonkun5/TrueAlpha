@@ -20,8 +20,10 @@
     "@angular/platform-browser-dynamic": "~11.0.5",
     "@angular/router": "~11.0.5",
     "@aws-amplify/ui-angular": "^0.4.16",
+    "@nestjs/core": "^7.6.5",
     "aws-amplify": "^3.3.13",
     "bootstrap": "^4.5.3",
+    "cors": "^2.8.5",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

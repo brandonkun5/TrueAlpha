@@ -9,7 +9,7 @@ import { catchError, retry } from "rxjs/operators";
   styleUrls: ['./leaderboard.component.css']
 })
 export class LeaderboardComponent{
-  
+
   constructor() { }
 
   ngOnInit(): void {
