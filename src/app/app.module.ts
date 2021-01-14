@@ -1,3 +1,4 @@
+import { Amplify } from 'aws-amplify';
 import { HttpClientJsonpModule, HttpClientModule } from "@angular/common/http";
 import { LoginComponent } from './login/login.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,6 +17,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from "@angular/router";
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { ProfileComponent } from './profile/profile.component';
     GroupsComponent,
     HomeComponent,
     ProfileComponent,
-    LoginComponent
+    LoginComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

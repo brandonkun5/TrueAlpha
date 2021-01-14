@@ -1,0 +1,21 @@
+{
+    "appName": "truealpha",
+    "roleName": "pinpointLambdaRole86a553a2",
+    "cloudformationPolicyName": "cloudformationPolicy86a553a2",
+    "cloudWatchPolicyName": "cloudWatchPolicy86a553a2",
+    "pinpointPolicyName": "pinpointPolicy86a553a2",
+    "authPolicyName": "pinpoint_amplify_86a553a2",
+    "unauthPolicyName": "pinpoint_amplify_86a553a2",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
