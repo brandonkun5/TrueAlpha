@@ -1,49 +1,19 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-truealpha-dev-123823-authRole",
-      "UnauthRoleArn": "arn:aws:iam::211636260803:role/amplify-truealpha-dev-123823-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::211636260803:role/amplify-truealpha-dev-123823-authRole",
-      "Region": "eu-west-1",
-      "DeploymentBucketName": "amplify-truealpha-dev-123823-deployment",
-      "UnauthRoleName": "amplify-truealpha-dev-123823-unauthRole",
-      "StackName": "amplify-truealpha-dev-123823",
-      "StackId": "arn:aws:cloudformation:eu-west-1:211636260803:stack/amplify-truealpha-dev-123823/91154000-4edd-11eb-830f-0a1370d15667",
-      "AmplifyAppId": "d27dht8ypqisfg"
-    },
-    "categories": {
-      "auth": {
-        "truealphae25a7df3": {}
-      },
-      "hosting": {
-        "amplifyhosting": {
-          "appId": "d27dht8ypqisfg",
-          "type": "manual"
-        }
-      }
-    }
-  },
-  "test": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-truealpha-test-211607-authRole",
-      "UnauthRoleArn": "arn:aws:iam::211636260803:role/amplify-truealpha-test-211607-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::211636260803:role/amplify-truealpha-test-211607-authRole",
+      "AuthRoleName": "amplify-truealpha-dev-210215-authRole",
+      "UnauthRoleArn": "arn:aws:iam::211636260803:role/amplify-truealpha-dev-210215-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::211636260803:role/amplify-truealpha-dev-210215-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-truealpha-test-211607-deployment",
-      "UnauthRoleName": "amplify-truealpha-test-211607-unauthRole",
-      "StackName": "amplify-truealpha-test-211607",
-      "StackId": "arn:aws:cloudformation:us-east-1:211636260803:stack/amplify-truealpha-test-211607/0f0b50f0-4fef-11eb-b980-0ee0fb3948c5",
-      "AmplifyAppId": "ddpmm3ylr9wux"
+      "DeploymentBucketName": "amplify-truealpha-dev-210215-deployment",
+      "UnauthRoleName": "amplify-truealpha-dev-210215-unauthRole",
+      "StackName": "amplify-truealpha-dev-210215",
+      "StackId": "arn:aws:cloudformation:us-east-1:211636260803:stack/amplify-truealpha-dev-210215/2f43d9b0-629f-11eb-aee6-0a3071d8b5ff",
+      "AmplifyAppId": "d2rel7n82tlk91"
     },
     "categories": {
       "auth": {
-        "truealphae25a7df3": {}
-      },
-      "hosting": {
-        "amplifyhosting": {
-          "appId": "ddpmm3ylr9wux",
-          "type": "manual"
-        }
+        "truealphab91544f3": {}
       }
     }
   }

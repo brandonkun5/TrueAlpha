@@ -1,15 +1,14 @@
 {
-  "projectName": "TrueAlpha",
+  "projectName": "truealpha",
   "version": "3.0",
   "frontend": "javascript",
   "javascript": {
-    "framework": "angular",
+    "framework": "react",
     "config": {
       "SourceDir": "src",
-      "DistributionDir": "dist/true-alpha",
+      "DistributionDir": "build",
       "BuildCommand": "npm.cmd run-script build",
-      "StartCommand": "ng serve",
-      "ServerlessContainers": true
+      "StartCommand": "npm.cmd run-script start"
     }
   },
   "providers": [
