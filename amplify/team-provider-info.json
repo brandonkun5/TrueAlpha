@@ -16,5 +16,29 @@
         "truealphab91544f3": {}
       }
     }
+  },
+  "test": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-truealpha-test-235558-authRole",
+      "UnauthRoleArn": "arn:aws:iam::211636260803:role/amplify-truealpha-test-235558-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::211636260803:role/amplify-truealpha-test-235558-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-truealpha-test-235558-deployment",
+      "UnauthRoleName": "amplify-truealpha-test-235558-unauthRole",
+      "StackName": "amplify-truealpha-test-235558",
+      "StackId": "arn:aws:cloudformation:us-east-1:211636260803:stack/amplify-truealpha-test-235558/73def1a0-62b7-11eb-a262-0e84f456b303",
+      "AmplifyAppId": "dfi5y9ysp60gs"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dfi5y9ysp60gs",
+          "type": "manual"
+        }
+      },
+      "auth": {
+        "truealpha537bed56": {}
+      }
+    }
   }
 }
