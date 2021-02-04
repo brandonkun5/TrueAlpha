@@ -2,7 +2,7 @@ import React, { Component, useState, useEffect } from 'react';
 import PubNub from 'pubnub';
 import { PubNubProvider, usePubNub } from 'pubnub-react';
 
-class Messaging extends Component {
+class Messaging extends React.Component {
     state = {  }
 
     

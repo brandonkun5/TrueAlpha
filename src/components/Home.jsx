@@ -3,7 +3,7 @@ import Feed from './Feed';
 import HomeLeaderboard from './HomeLeaderboard';
 import HomeProfile from './HomeProfile';
 
-class Home extends Component {
+class Home extends React.Component {
     state = {  }
     render() { 
         return ( 

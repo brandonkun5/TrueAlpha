@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-class Leagues extends Component {
+class Leagues extends React.Component {
     state = {  }
     render() { 
         return ( 

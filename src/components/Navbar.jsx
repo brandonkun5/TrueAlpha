@@ -13,7 +13,7 @@ import Leagues from './Leagues';
 import Messaging from './Messaging';
 import Profile from './Profile';
 
-class Navbar extends Component {
+class Navbar extends React.Component {
     state = {  }
     render() { 
         return ( 
@@ -41,9 +41,6 @@ class Navbar extends Component {
                         <Link to="/profile" className="nav-link">Profile</Link>
                     </li>
                 </ul>
-                <span className="navbar-text">
-                    Login
-                </span>
                 </div>
             </nav>
         </Router>

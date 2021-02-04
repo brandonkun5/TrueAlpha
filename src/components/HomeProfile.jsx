@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class HomeProfile extends Component {
+class HomeProfile extends React.Component {
     state = {  }
     render() { 
         return ( 

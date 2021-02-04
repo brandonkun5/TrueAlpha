@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Counter extends Component {
+class Counter extends React.Component {
     styles = {
         fontSize: '20px'
     };

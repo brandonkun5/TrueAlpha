@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class HomeLeaderboard extends Component {
+class HomeLeaderboard extends React.Component {
     state = {  }
     render() { 
         return ( 

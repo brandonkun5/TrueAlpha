@@ -32,18 +32,28 @@ class App extends Component {
   render() { 
     return ( 
       <div>
+      <Router>
       <Navbar />
         <div className="content">
-        <Router>
         <Switch>
-            <Route exact path="/*" component={Home} />
-            <Route exact path="/leaderboard" component={Leaderboard} />
-            <Route exact path="/leagues" component={Leagues} />
-            <Route exact path="/messages" component={Messaging} />
-            <Route exact path="/profile" component={Profile} />
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/leaderboard" >
+              <Leaderboard /> 
+            </Route>
+            <Route exact path="/leagues">
+              <Leagues />
+            </Route>
+            <Route exact path="/messages">
+              <Messaging />
+            </Route>
+            <Route exact path="/profile">
+              <Profile />
+            </Route>
         </Switch>
-        </Router>
         </div>
+      </Router>
       </div>
      );
   }

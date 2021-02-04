@@ -26,7 +26,6 @@ Amplify.configure(awsExports);
 ReactDOM.render(
   <Router>
     <App />
-    <Counters />
   </Router>,
   document.getElementById('root')
 );

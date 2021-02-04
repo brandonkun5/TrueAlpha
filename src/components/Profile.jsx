@@ -1,9 +1,40 @@
 import React, { Component } from 'react';
+import Fastlink from './Fastlink';
 
-class Profile extends Component {
+class Profile extends React.Component {
     state = {  }
+
+    fastLink (){
+      var fastlinkBtn = document.getElementById('btn-fastlink');
+
+      fastlinkBtn.addEventListener('click', function() {
+        window.fastlink.open({
+          fastLinkURL: 'https://fl4.preprod.yodlee.com/authenticate/USDevexPreProd2-158/fastlink/?channelAppName=usdevexpreprod2',
+          accessToken: 'jA6hzeAsOJ62CLnTNJuy61ElpIbT',
+          params: {
+            userExperienceFlow : 'Aggregation'
+          },
+          onSuccess: function (data) {
+            console.log(data);
+          },
+          onError: function (data) {
+            console.log(data);
+          },
+          onExit: function (data) {
+            console.log(data);
+          },
+          onEvent: function (data) {
+            console.log(data);
+          }
+        },
+        'container-fastlink');
+      },
+      false);
+    }
+
     render() { 
-        return ( <div className="container" style={{'margin-top': '20px'}}>
+        return ( 
+          <div className="container" style={{'marginTop': '20px'}}>
         <h1>Profile</h1>
         <div className="card">
             <div className="card-body">
@@ -13,7 +44,7 @@ class Profile extends Component {
                   <h3>Brandon Kung</h3>
                   <div className="d-flex align-items-center justify-content-center">
                     <h5 className="mb-0 mr-2 text-muted">USA</h5>
-                    <div className="br-wrapper br-theme-css-stars"><select id="profile-rating" name="rating" autocomplete="off" style={{'display': 'none'}}>
+                    <div className="br-wrapper br-theme-css-stars"><select id="profile-rating" name="rating" autoComplete="off" style={{'display': 'none'}}>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -93,15 +124,12 @@ class Profile extends Component {
                 </p>
               </div>
               <button className="btn btn-primary btn-block mb-2">Preview</button>
-              <div id="container-fastlink">
-                <div style={{'text-align': 'center'}}>
-                 <input type="submit" id="btn-fastlink" value="Link an Account" />
-                </div>
-              </div>
+              <Fastlink />
             </div>
           </div>
-    </div> );
+    </div>
+    );
     }
-}
+  }
  
 export default Profile;

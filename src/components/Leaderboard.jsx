@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Leaderboard extends Component {
+class Leaderboard extends React.Component {
     state = {  }
     render() { 
         return ( 
