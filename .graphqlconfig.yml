@@ -1,6 +1,6 @@
 projects:
   truealpha:
-    schemaPath: src/graphql/schema.json
+    schemaPath: amplify/backend/api/truealpha/build/schema.graphql
     includes:
       - src/graphql/**/*.js
     excludes:

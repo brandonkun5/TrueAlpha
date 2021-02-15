@@ -24,7 +24,11 @@ import Profile from './components/Profile';
 import { render } from '@testing-library/react';
 import Home from './components/Home';
 import Messaging from './components/Messaging';
-import { withAuthenticator } from '@aws-amplify/ui-react'
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+
+import {Auth} from "aws-amplify";
+
+console.log(Auth.currentUserInfo());
 
 
 class App extends Component {
@@ -34,6 +38,7 @@ class App extends Component {
       <div>
       <Router>
       <Navbar />
+      <AmplifySignOut />
         <div className="content">
         <Switch>
             <Route exact path="/">

@@ -1,6 +1,6 @@
 {
     "identityPoolName": "truealpha537bed56_identitypool_537bed56",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "trueal537bed56",
     "userPoolName": "truealpha537bed56_userpool_537bed56",
     "autoVerifiedAttributes": [

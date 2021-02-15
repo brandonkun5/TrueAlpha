@@ -1,4 +1,23 @@
 import React, { Component } from 'react';
+import { Auth } from 'aws-amplify';
+
+
+async function signOut() {
+    try {
+        console.log("SIGNING OUT");
+        await Auth.signOut();
+    } catch (error) {
+        console.log('error signing out: ', error);
+    }
+};
+
+function showInfo() {
+    try {
+        console.log(Auth.currentUserInfo);
+    } catch (error) {
+        console.log('ERROR: ', error);
+    }
+};
 
 class HomeProfile extends React.Component {
     state = {  }
@@ -12,6 +31,9 @@ class HomeProfile extends React.Component {
                         <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="profile" className="img-sm rounded-circle"/>
                         <div className="mb-3">
                             <h3>Brandon Kung</h3>
+                            <button onClick={showInfo}>SHOW USER INFO</button>
+                            <button onClick={signOut}>SIGN OUT</button>
+                            {/* <button onClick={signOut}>SIGN OUT</button> */}
                             <div className="d-flex align-items-center justify-content-center">
                             <h5 className="mb-0 mr-2 text-muted">USA</h5>
                             <div className="br-wrapper br-theme-css-stars"><select id="profile-rating" name="rating" autoComplete="off" style={{display: 'none'}}>
